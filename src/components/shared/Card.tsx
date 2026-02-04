@@ -47,7 +47,7 @@ export function TourCard({ tour, className }: TourCardProps) {
             {tour.title}
           </h3>
           <div className="flex items-center gap-1 shrink-0 ml-2">
-            <Icon name="star" size="sm" filled style={{ color: '#f59e0b' }} />
+            <Icon name="star" size="sm" filled className="text-amber-500" />
             <span className="text-sm font-bold" style={{ color: '#ee3b2b' }}>{tour.rating}</span>
           </div>
         </div>

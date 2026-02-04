@@ -66,7 +66,7 @@ export function Navbar({ transparent = false }: NavbarProps) {
         >
           <Icon
             name={mobileMenuOpen ? "close" : "menu"}
-            style={{ color: transparent ? '#ffffff' : '#181211' }}
+            className={transparent ? "text-white" : "text-text-primary dark:text-white"}
           />
         </button>
       </div>
