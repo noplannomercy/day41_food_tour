@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee3b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Delicious Korea - Our Food Tours</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181211] dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#f4f0f0] dark:border-white/10 bg-white dark:bg-background-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V44" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#181211] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-[#181211] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-primary text-sm font-bold" href="#">Tours</a>
+<a class="text-[#181211] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors" href="#">About</a>
+<a class="text-[#181211] dark:text-white/80 text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full bg-[#f4f0f0] dark:bg-white/5 border-none">
+<div class="text-[#896561] dark:text-white/40 flex items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181211] dark:text-white focus:outline-0 focus:ring-0 border-none bg-transparent placeholder:text-[#896561] px-4 pl-2 text-sm font-normal leading-normal" placeholder="Find a tour..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span>Book Now</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBxaxgJwVib8HGCitb_exich_nrq8APTcL5myqarff5iwAl8jbclsXVXoikraAxXdV0zkPP52eoSUbY_5PWZOO0_IllyrzM7NQ_OmTfUjW1GYQDzuqi2BxwkdeitW49DSd3FoYF25drmWu2ujnuVHJps2A2jTNJvX8aFr9fc-LSPsqtpVnIpbsndzuOj7oejZmSCgelTE3MCC3Yz_Wlz4kYRD5iKj-0pabVwlPiowQiBqOSwSsmO-eJhfZ1zPv7LDycPD5JQJIA634");'></div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center">
+<div class="w-full max-w-[1200px] px-4 md:px-10 py-8">
+<!-- Hero Section / Header Image -->
+<div class="@container mb-8">
+<div class="@[480px]:py-3">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white dark:bg-white/5 rounded-xl min-h-[300px] shadow-lg border border-black/5" data-alt="Traditional Korean spread on a table" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQau70xAHBFRL8OZ87tqyt12S8nqZphlYLNt7Dh8vyVujnqh-EIC_mj2Os8-9fz84OjmofkmjFrXbUtvIn3X_Q1JQX3cvvfOTp_gApB0jKUfSP8QgivXWOTogTt8Iuyv20o-syZ7gl7TTkHAWcVd4K7Xfwl4ubGF3uTufhbQYGJPseV43Q_oYGZRIeSZhZiOKb8eAMtrzNk_NAU_t_c5gUVKwsh83SO0awvZAFeUMiqFFYEOSr_WGel5aXObhIkkB65iLgyr-lBAo");'>
+<div class="flex flex-col p-8">
+<p class="text-white tracking-light text-[40px] font-bold leading-tight">Our Food Tours</p>
+<p class="text-white/80 text-lg max-w-xl">Discover the authentic flavors of Seoul with our expert local guides. From bustling markets to hidden alleyway gems.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Filters (Chips) -->
+<div class="flex items-center justify-between mb-6 flex-wrap gap-4">
+<div class="flex gap-3 flex-wrap items-center">
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-primary text-white px-5 shadow-sm">
+<span class="text-sm font-bold">All Tours</span>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-white/5 text-[#181211] dark:text-white px-5 border border-[#f4f0f0] dark:border-white/10 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+<span class="text-sm font-medium">Street Food</span>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-white/5 text-[#181211] dark:text-white px-5 border border-[#f4f0f0] dark:border-white/10 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[18px]">dinner_dining</span>
+<span class="text-sm font-medium">Fine Dining</span>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-white/5 text-[#181211] dark:text-white px-5 border border-[#f4f0f0] dark:border-white/10 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span class="text-sm font-medium">Market Tours</span>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-lg bg-white dark:bg-white/5 text-[#181211] dark:text-white px-5 border border-[#f4f0f0] dark:border-white/10 hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[18px]">nightlife</span>
+<span class="text-sm font-medium">Night Life</span>
+</button>
+</div>
+<div class="flex items-center gap-2 text-sm text-[#896561] dark:text-white/60">
+<span>Sort by:</span>
+<select class="bg-transparent border-none focus:ring-0 text-[#181211] dark:text-white font-bold cursor-pointer pr-8">
+<option>Popularity</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Rating</option>
+</select>
+</div>
+</div>
+<!-- Tours Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 group bg-white dark:bg-white/5 rounded-xl overflow-hidden border border-black/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Tteokbokki and street food at Myeongdong" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPakEhp0lUHGOc1f69PZ0VuRoN2TBcWc__9-_aWMq3uDqY-8nFQ2ZC9g-pWohfd_-2tO5bxBdy8X5HjNDqciEusMRS-xACoub74RXpf40eyAFb-UX0YTKo1f_Q1o_qyILWjnjU5dfZVK5_y40hEj32Bl4YT7ct4pY0Bb7sdhr-YfpRY-O_zzEoGW9ZRZz7rRHhuw-0b7fjHrQmDzr--5_ZXj0V2IBrm9Ugo5T_g8t7o2zkMdsfDifnzpJyzio8I33E_FYDpkwZTE0");'></div>
+<div class="absolute top-3 left-3 bg-white/90 dark:bg-black/70 px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Best Seller</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Myeongdong Night Street Food</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] fill-[1]">star</span>
+<span class="text-sm font-bold">4.8</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[#896561] dark:text-white/60 text-sm mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>3 hours</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>$45</span>
+</div>
+</div>
+<p class="text-sm text-[#896561] dark:text-white/60 mb-6 line-clamp-2">Taste the world-famous spicy rice cakes, grilled lobster, and more in Seoul's brightest district.</p>
+<div class="mt-auto">
+<button class="w-full bg-[#f4f0f0] dark:bg-white/10 hover:bg-primary hover:text-white text-[#181211] dark:text-white py-3 rounded-lg font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    View Details
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 group bg-white dark:bg-white/5 rounded-xl overflow-hidden border border-black/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Traditional Korean market vendor" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTDFXnqfNSbISk6XA_0qX4czxqg0h6LZjUDbzhMYR8ZsV3ltt7Lpds1_lEEk9evDP2sdeaZ7wfMihZQH0YhfbKgSA8jOjV6P6XjRiKbVFMT8RnrM4toEA1x_5haxSUHXLWQQqhR21vN2Y7zB_XGpM3Swq0MZDsn5EajAFJCjLyrvgzQaUSz6Poal-oPSzgZT5R00q7cRYDFVujUxI6qK-DZ-sv3-6PscUtqfZ8xE_hV3tGjxzgBf-DYCGpwQRRTnrlqypwnJu12DM");'></div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Traditional Gwangjang Market Tour</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] fill-[1]">star</span>
+<span class="text-sm font-bold">4.9</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[#896561] dark:text-white/60 text-sm mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>4 hours</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>$55</span>
+</div>
+</div>
+<p class="text-sm text-[#896561] dark:text-white/60 mb-6 line-clamp-2">Explore Seoul's oldest market and enjoy authentic Bindaetteok and Mayak Kimbap.</p>
+<div class="mt-auto">
+<button class="w-full bg-[#f4f0f0] dark:bg-white/10 hover:bg-primary hover:text-white text-[#181211] dark:text-white py-3 rounded-lg font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    View Details
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 group bg-white dark:bg-white/5 rounded-xl overflow-hidden border border-black/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end Korean fine dining" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFwK3SMv5v4xd-hxeNrC2Et_iCsnManb74bPMGyUhtTCOKqoAPCy0w-dvpUjKoM0_kKWXYyImW3Uv7wuaZqjNHOr30xJHL3Q38bbGPQPVmzdnNw4Bh8pa93aI8DP5pzfCmrcqixZmxpQaNFmn7YPjEqzRDb0Y0jTZjPUAif8bL-S4fQlh3_9blmfkyMDm26tL9VGM8g21AdBvqC2-bXj8agbRCI4hZSce2Ph-f8tSb7f6voDHWLAjofZJjXtcQ7-lmu7Lh98rOK34");'></div>
+<div class="absolute top-3 left-3 bg-primary text-white px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">Luxury</div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Gangnam Fine Dining Experience</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] fill-[1]">star</span>
+<span class="text-sm font-bold">5.0</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[#896561] dark:text-white/60 text-sm mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>3.5 hours</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>$120</span>
+</div>
+</div>
+<p class="text-sm text-[#896561] dark:text-white/60 mb-6 line-clamp-2">A sophisticated culinary journey through Michelin-star rated Korean modern cuisine.</p>
+<div class="mt-auto">
+<button class="w-full bg-[#f4f0f0] dark:bg-white/10 hover:bg-primary hover:text-white text-[#181211] dark:text-white py-3 rounded-lg font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    View Details
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-4 group bg-white dark:bg-white/5 rounded-xl overflow-hidden border border-black/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Fresh seafood at Noryangjin" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvVRRAwiNZUGPo-yvFjirtctSHBivjRjCGIZAcEHR9Et7FT-HvIDLM5Pt7XQUlnSya8thAdGEGzvw2MIehYBdJGP2i_P_5L4acE4KMvG-pt5PMFkm5p_TXRD7MHNIGEUUt8VA83qSETJIN1bx6q7vP__xIZN8Sa5PehqeGRpLlcRUbLZjk5gEy-xirQ1CXaxz864SwPVkza3z4D0--G-ckHpcauQkoAS4O37SibcCe4Cx5Nrg5Ai4XjQvtJdKZihqGZSDgsWUuhlU");'></div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Noryangjin Fish Market Adventure</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] fill-[1]">star</span>
+<span class="text-sm font-bold">4.7</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[#896561] dark:text-white/60 text-sm mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>3 hours</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>$50</span>
+</div>
+</div>
+<p class="text-sm text-[#896561] dark:text-white/60 mb-6 line-clamp-2">Select fresh seafood from the stalls and have it prepared immediately in traditional style.</p>
+<div class="mt-auto">
+<button class="w-full bg-[#f4f0f0] dark:bg-white/10 hover:bg-primary hover:text-white text-[#181211] dark:text-white py-3 rounded-lg font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    View Details
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="flex flex-col gap-4 group bg-white dark:bg-white/5 rounded-xl overflow-hidden border border-black/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Group toast with Korean alcoholic drinks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBDWDul3LN4hgNgTG_rdVsxIrT_j264AshX4eAAzxVx1trJtp1CwGibNWtonYbrWwawcDcyQTpfYHH87qwN4-UFrbRiQ32RXcHHK1LKWT276XRY_40QQCZ-EaYvcEDzgkQ95nBZcubrPrr2HCsUAL2uOq7MzmTwLzgdfdPMyqrZj_ktFmyKgBmb-ZLh-LeGOEbcD65b_dB6IJ1-36b5WEwrj8QhIKbnY7fLvXmBy5WKZXUPL_dn7fCFW76glxmA9zCdJTpKTSOhq2s");'></div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Hongdae Pub Crawl &amp; Snacks</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] fill-[1]">star</span>
+<span class="text-sm font-bold">4.6</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[#896561] dark:text-white/60 text-sm mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>4.5 hours</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>$60</span>
+</div>
+</div>
+<p class="text-sm text-[#896561] dark:text-white/60 mb-6 line-clamp-2">Experience Seoul's vibrant nightlife through its drinks and the best "Anju" bar snacks.</p>
+<div class="mt-auto">
+<button class="w-full bg-[#f4f0f0] dark:bg-white/10 hover:bg-primary hover:text-white text-[#181211] dark:text-white py-3 rounded-lg font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    View Details
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="flex flex-col gap-4 group bg-white dark:bg-white/5 rounded-xl overflow-hidden border border-black/5 shadow-sm hover:shadow-md transition-shadow">
+<div class="relative w-full aspect-[4/3] overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cooking class preparing Kimchi" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDl1D7J6UMZfsdr-XhXPCTvFJiJRNIp0qyQMvR5BFiQYVYMU-3fBYMLKEI8B31OGY9BkJi4FXxT5iGseMx0o5w0SE0pnsKLs7MPVAOReN4gqp5w8rvT_e6_4BVZa0R_vIzi8yfGIwh4Xiy8Kjd9oXsjdwBHjsTMpce7QXM8M6YvBJOUCo9IZMeR-psfKtifupHljzhqglsVItUWrlit5bYbdFqn3oFO03ZNsePOey2PZcnBGaX374J3-CeNYW8FfbOYRcMeUC226CQ");'></div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Authentic Home Cooking Class</h3>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[16px] fill-[1]">star</span>
+<span class="text-sm font-bold">4.9</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-[#896561] dark:text-white/60 text-sm mb-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>4 hours</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">payments</span>
+<span>$75</span>
+</div>
+</div>
+<p class="text-sm text-[#896561] dark:text-white/60 mb-6 line-clamp-2">Learn the secrets of Korean kitchen favorites and enjoy the meal you've prepared yourself.</p>
+<div class="mt-auto">
+<button class="w-full bg-[#f4f0f0] dark:bg-white/10 hover:bg-primary hover:text-white text-[#181211] dark:text-white py-3 rounded-lg font-bold text-sm transition-all flex items-center justify-center gap-2">
+                                    View Details
+                                    <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex items-center justify-center p-4 border-t border-[#f4f0f0] dark:border-white/10 mt-8">
+<a class="flex size-10 items-center justify-center hover:bg-[#f4f0f0] dark:hover:bg-white/5 rounded-full" href="#">
+<span class="material-symbols-outlined text-[#181211] dark:text-white">chevron_left</span>
+</a>
+<div class="flex items-center gap-1">
+<a class="text-sm font-bold leading-normal flex size-10 items-center justify-center text-white rounded-full bg-primary" href="#">1</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#181211] dark:text-white hover:bg-[#f4f0f0] dark:hover:bg-white/5 rounded-full" href="#">2</a>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#181211] dark:text-white hover:bg-[#f4f0f0] dark:hover:bg-white/5 rounded-full" href="#">3</a>
+<span class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#896561] dark:text-white/40">...</span>
+<a class="text-sm font-normal leading-normal flex size-10 items-center justify-center text-[#181211] dark:text-white hover:bg-[#f4f0f0] dark:hover:bg-white/5 rounded-full" href="#">8</a>
+</div>
+<a class="flex size-10 items-center justify-center hover:bg-[#f4f0f0] dark:hover:bg-white/5 rounded-full" href="#">
+<span class="material-symbols-outlined text-[#181211] dark:text-white">chevron_right</span>
+</a>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-[#f4f0f0] dark:border-white/10 py-10">
+<div class="max-w-[1200px] mx-auto px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-primary">
+<span class="text-lg font-bold text-[#181211] dark:text-white">Delicious Korea</span>
+</div>
+<div class="flex gap-8 text-sm text-[#896561] dark:text-white/60">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+<a class="hover:text-primary" href="#">Help Center</a>
+</div>
+<p class="text-xs text-[#896561] dark:text-white/40">© 2024 Delicious Korea. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</body></html>

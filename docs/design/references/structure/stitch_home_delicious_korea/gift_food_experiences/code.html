@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gift Food Experiences | Delicious Korea</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#ee3b2b",
+                "background-light": "#f8f6f6",
+                "background-dark": "#221210",
+              },
+              fontFamily: {
+                "display": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181211] dark:text-white min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between border-b border-solid border-[#e6dcdb] dark:border-[#3d2a28] px-10 py-3 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4 text-[#181211] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9 hidden md:flex">
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Food Tours</a>
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Experiences</a>
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Reviews</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Gift Cards</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold">
+<span>Sign In</span>
+</button>
+<button class="flex items-center justify-center rounded-lg h-10 bg-gray-100 dark:bg-[#3d2a28] text-[#181211] dark:text-white px-3">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 px-4">
+<!-- Hero Section -->
+<div class="@container">
+<div class="@[480px]:py-3">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden rounded-xl min-h-[320px] shadow-lg" data-alt="Traditional Korean market food table with various dishes" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBmDM4tN1bhyT2EcVWLKdq9bl2OQeGQ_UCHNVrHJDGxIKeA63MY-wC9z0hccLEl0wVfqT12F66DAX-2mvoVeAeEoS8GcfhqMrSGWXy8XNrnoAwsT_DSQbKuhnQFJjkWbwqheBpusR77FosaFyohkqH6aiar_nGMiU3TXduZ0If8In78U8D6hMYbIV5uRYNjVl8xLC1bvi5Xt8oCYcxv8y5UHJgY5zkkiAWKcCE215SIBwnvFN42OIsGxg6B8LnaLfDglHM9M_ZfDxk");'>
+<div class="flex flex-col p-8">
+<h1 class="text-white text-4xl md:text-5xl font-black leading-tight mb-2">Gift the Flavors of Seoul</h1>
+<p class="text-white/90 text-lg max-w-xl">The perfect gift for food lovers. Choose a digital gift card or a curated food tour voucher.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Page Heading & Tabs -->
+<div class="flex flex-col gap-3 py-6">
+<p class="text-[#181211] dark:text-white text-3xl font-black leading-tight tracking-[-0.033em]">Select Your Gift</p>
+<div class="pb-3 mt-4">
+<div class="flex border-b border-[#e6dcdb] dark:border-[#3d2a28] gap-8">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-primary text-primary pb-[13px] pt-4" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Amount Vouchers</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-transparent text-gray-500 dark:text-gray-400 pb-[13px] pt-4 hover:text-primary transition-all" href="#">
+<p class="text-sm font-bold leading-normal tracking-[0.015em]">Tour Experiences</p>
+</a>
+</div>
+</div>
+</div>
+<!-- Step 1: Amounts -->
+<h2 class="text-[#181211] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 pt-4 flex items-center gap-2">
+<span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">1</span>
+                    Choose Amount
+                </h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 pb-8">
+<button class="flex flex-col items-center justify-center p-6 border-2 border-primary bg-primary/5 rounded-xl transition-all">
+<span class="text-2xl font-bold text-primary">$50</span>
+<span class="text-xs text-primary/80 font-medium">USD</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 border-2 border-[#e6dcdb] dark:border-[#3d2a28] rounded-xl hover:border-primary transition-all">
+<span class="text-2xl font-bold">$100</span>
+<span class="text-xs text-gray-500 font-medium">USD</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 border-2 border-[#e6dcdb] dark:border-[#3d2a28] rounded-xl hover:border-primary transition-all">
+<span class="text-2xl font-bold">$150</span>
+<span class="text-xs text-gray-500 font-medium">USD</span>
+</button>
+<button class="flex flex-col items-center justify-center p-6 border-2 border-[#e6dcdb] dark:border-[#3d2a28] rounded-xl hover:border-primary transition-all">
+<span class="text-sm font-bold">Custom</span>
+<span class="text-xs text-gray-500 font-medium">Enter amount</span>
+</button>
+</div>
+<!-- Step 2: Customization -->
+<h2 class="text-[#181211] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-4 pt-4 flex items-center gap-2">
+<span class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center text-sm">2</span>
+                    Personalize Design
+                </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-10">
+<!-- Design Selector -->
+<div class="flex flex-col gap-4">
+<p class="text-sm font-bold text-gray-600 dark:text-gray-400">Select a card theme:</p>
+<div class="grid grid-cols-3 gap-2">
+<div class="cursor-pointer border-2 border-primary rounded-lg overflow-hidden h-20 ring-2 ring-primary ring-offset-2 dark:ring-offset-background-dark">
+<div class="w-full h-full bg-gradient-to-br from-red-100 to-primary/20 flex items-center justify-center" data-alt="Traditional Korean patterns red">
+<span class="material-symbols-outlined text-primary">palette</span>
+</div>
+</div>
+<div class="cursor-pointer border-2 border-transparent rounded-lg overflow-hidden h-20 hover:border-gray-300">
+<div class="w-full h-full bg-gradient-to-br from-green-100 to-green-600/20 flex items-center justify-center" data-alt="Korean food illustration design">
+<span class="material-symbols-outlined text-green-700">ramen_dining</span>
+</div>
+</div>
+<div class="cursor-pointer border-2 border-transparent rounded-lg overflow-hidden h-20 hover:border-gray-300">
+<div class="w-full h-full bg-gradient-to-br from-blue-100 to-blue-600/20 flex items-center justify-center" data-alt="Seoul city skyline illustration">
+<span class="material-symbols-outlined text-blue-700">location_city</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3 mt-4">
+<input class="rounded-lg border-[#e6dcdb] dark:border-[#3d2a28] bg-white dark:bg-[#2d1b19] p-3 text-sm" placeholder="Recipient Name" type="text"/>
+<input class="rounded-lg border-[#e6dcdb] dark:border-[#3d2a28] bg-white dark:bg-[#2d1b19] p-3 text-sm" placeholder="Recipient Email" type="email"/>
+<textarea class="rounded-lg border-[#e6dcdb] dark:border-[#3d2a28] bg-white dark:bg-[#2d1b19] p-3 text-sm" placeholder="Add a personal message..." rows="3"></textarea>
+</div>
+</div>
+<!-- Preview Card -->
+<div class="flex flex-col items-center justify-center bg-gray-50 dark:bg-[#2d1b19] rounded-2xl p-6 border border-dashed border-gray-300 dark:border-gray-700">
+<p class="text-xs font-bold text-gray-400 mb-4 uppercase tracking-widest">Digital Preview</p>
+<div class="w-full aspect-[1.6/1] bg-white dark:bg-background-dark rounded-xl shadow-xl overflow-hidden relative border border-gray-100 dark:border-gray-800">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#ee3b2b 1px, transparent 1px); background-size: 10px 10px;"></div>
+<div class="p-6 flex flex-col h-full justify-between relative z-10">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-black text-primary text-xl leading-tight">DELICIOUS<br/>KOREA</h3>
+<p class="text-[10px] uppercase font-bold tracking-tighter text-gray-500">Food Tour Gift Card</p>
+</div>
+<div class="text-3xl font-black text-[#181211] dark:text-white">$50</div>
+</div>
+<div class="mt-4 italic text-sm text-gray-600 dark:text-gray-300">"Happy Birthday! Enjoy the amazing food in Seoul!"</div>
+<div class="mt-auto pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-between items-end">
+<div class="text-[10px] text-gray-400">Valid for 2 years from purchase</div>
+<div class="text-xs font-mono font-bold text-gray-300">DK-8273-XXXX</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Step 3: Checkout -->
+<div class="bg-white dark:bg-background-dark border border-[#e6dcdb] dark:border-[#3d2a28] rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-sm">
+<div>
+<h3 class="text-xl font-bold mb-1">Order Summary</h3>
+<p class="text-gray-500 text-sm">Amount: $50.00 | Digital Delivery</p>
+</div>
+<div class="flex gap-4 w-full md:w-auto">
+<button class="flex-1 md:flex-none flex items-center justify-center gap-2 rounded-lg px-8 py-4 bg-primary text-white font-bold text-lg hover:opacity-90 transition-all">
+                            Proceed to Payment
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- FAQ Section -->
+<div class="py-16">
+<h3 class="text-center font-bold text-xl mb-8">Frequently Asked Questions</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="p-5 bg-white dark:bg-[#2d1b19] rounded-lg">
+<p class="font-bold text-sm mb-2">How is the gift card delivered?</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Instantly via email. You can send it directly to the recipient or to yourself to print out.</p>
+</div>
+<div class="p-5 bg-white dark:bg-[#2d1b19] rounded-lg">
+<p class="font-bold text-sm mb-2">Can it be used for any tour?</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Yes! The amount vouchers can be applied to any food tour or cooking class on our website.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-[#e6dcdb] dark:border-[#3d2a28] bg-white dark:bg-background-dark py-10">
+<div class="max-w-[960px] mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2 text-gray-400">
+<span class="material-symbols-outlined">restaurant</span>
+<span class="font-bold">Delicious Korea</span>
+</div>
+<div class="text-sm text-gray-500">
+                    © 2024 Delicious Korea Food Tours. All rights reserved.
+                </div>
+<div class="flex gap-4">
+<a class="text-gray-400 hover:text-primary" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-gray-400 hover:text-primary" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

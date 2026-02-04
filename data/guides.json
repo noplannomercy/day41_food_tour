@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Kim Min-jun",
+    "title": "Lead Food Guide",
+    "bio": "Born and raised in Seoul, Min-jun has spent over 8 years sharing his passion for Korean cuisine with travelers from around the world. His grandmother's recipes inspire every tour.",
+    "languages": ["English", "Korean", "Japanese"],
+    "experience": 8,
+    "image": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "id": "2",
+    "name": "Park Soo-yeon",
+    "title": "Culinary Expert",
+    "bio": "A trained chef turned tour guide, Soo-yeon brings deep culinary knowledge to every market tour. She's famous for finding the best hidden gems in Gwangjang Market.",
+    "languages": ["English", "Korean", "Mandarin"],
+    "experience": 6,
+    "image": "https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "id": "3",
+    "name": "Lee Joon-ho",
+    "title": "Street Food Specialist",
+    "bio": "Joon-ho knows every street food vendor in Myeongdong by name. His energetic personality and love for spicy food make every tour an adventure.",
+    "languages": ["English", "Korean"],
+    "experience": 5,
+    "image": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=400"
+  },
+  {
+    "id": "4",
+    "name": "Choi Yuna",
+    "title": "Cultural Food Guide",
+    "bio": "With a background in Korean history, Yuna connects every dish to its cultural origins. Her tours are as educational as they are delicious.",
+    "languages": ["English", "Korean", "Spanish"],
+    "experience": 4,
+    "image": "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400"
+  }
+]

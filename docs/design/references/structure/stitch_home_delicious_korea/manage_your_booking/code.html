@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee3b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"],
+                        "sans": ["Plus Jakarta Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Manage Your Booking | Delicious Korea</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-[#181211] dark:text-[#f8f6f6] min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e6dcdb] dark:border-[#3d2a28] px-10 py-3 bg-white dark:bg-[#1c0f0e]">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Tours</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Food Guide</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center">
+<div class="layout-content-container flex flex-col max-w-[960px] w-full flex-1 px-4 md:px-10 py-10">
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-3 p-4 mb-6">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-[#181211] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Manage Your Booking</p>
+<p class="text-[#896561] dark:text-[#c4a4a1] text-base font-normal leading-normal">Enter your details to view or modify your food tour experience.</p>
+</div>
+</div>
+<!-- Booking Lookup Section (Login) -->
+<div class="bg-white dark:bg-[#2d1a18] rounded-xl shadow-sm border border-[#e6dcdb] dark:border-[#3d2a28] p-6 mb-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#181211] dark:text-white text-sm font-medium leading-normal pb-2">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181211] dark:text-white focus:outline-0 focus:ring-0 border border-[#e6dcdb] dark:border-[#3d2a28] bg-white dark:bg-[#1c0f0e] focus:border-primary h-14 placeholder:text-[#896561] p-[15px] text-base font-normal leading-normal" placeholder="e.g. traveler@example.com" value="alex.jones@example.com"/>
+</label>
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#181211] dark:text-white text-sm font-medium leading-normal pb-2">Booking ID</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181211] dark:text-white focus:outline-0 focus:ring-0 border border-[#e6dcdb] dark:border-[#3d2a28] bg-white dark:bg-[#1c0f0e] focus:border-primary h-14 placeholder:text-[#896561] p-[15px] text-base font-normal leading-normal" placeholder="e.g. DK-12345" value="DK-88291"/>
+</label>
+</div>
+<div class="flex justify-start pt-6">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:brightness-110">
+<span class="truncate">Lookup Booking</span>
+</button>
+</div>
+</div>
+<!-- Section: Tour Details -->
+<div class="mb-2">
+<h2 class="text-[#181211] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3">Upcoming Tour: Seoul Night Market Extravaganza</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4">
+<!-- Main Content -->
+<div class="lg:col-span-2 space-y-6">
+<!-- Meeting Point Map -->
+<div class="bg-white dark:bg-[#2d1a18] rounded-xl overflow-hidden border border-[#e6dcdb] dark:border-[#3d2a28]">
+<div class="p-4 border-b border-[#e6dcdb] dark:border-[#3d2a28] flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="font-bold">Meeting Point: Gwangjang Market Gate 1</span>
+</div>
+<span class="text-xs text-[#896561] font-medium">6:30 PM (KST)</span>
+</div>
+<div class="h-64 bg-slate-200 relative">
+<img class="w-full h-full object-cover" data-alt="Map showing Gwangjang Market in Seoul" data-location="Seoul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChVS2d6YPI0hNBxr38KyiNN-qzQyb64y2F70Pw-o-QATu5hcVmoC4gIrT6OcrrN8o4SNy5-NQKJ7TIKtwN4_Jse-Azy8ir3FZQzGkxFdoY9gxkTRlvqaFuxU_fhQlNlL6_kSb4auiBwcINWMOy4gqdIf0x3ywLu4Zrxjim5Ap6gg6RfU-sVtUIawSUljRv8jFpiwjeiIb6im-qdOU07bDyS5H8pPWOWTK4Y7WT8jZImWVrvsWhcT_jngnJwW6GSUx6ra4vP830iRI"/>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="bg-primary text-white p-2 rounded-full shadow-lg animate-bounce">
+<span class="material-symbols-outlined">person_pin_circle</span>
+</div>
+</div>
+</div>
+<div class="p-4 bg-primary/5 dark:bg-primary/10">
+<p class="text-sm text-[#5c4441] dark:text-[#e0ccc9]">Look for the guide holding a red "Delicious Korea" flag near the main entrance stairs.</p>
+</div>
+</div>
+<!-- Host Contact -->
+<div class="bg-white dark:bg-[#2d1a18] p-6 rounded-xl border border-[#e6dcdb] dark:border-[#3d2a28] flex items-center gap-4">
+<div class="size-16 rounded-full overflow-hidden bg-slate-200">
+<img class="w-full h-full object-cover" data-alt="Friendly Korean tour guide portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCap5ZS9ShFDJxe1uLvxv9AMG-e5Z2dS6Ygk8XElS2kSx18s7PGKLZ2WWQ_TD5DgJ3gy6ZbckNhw3EGiz2ikrsmOD1uQGFpEuOQI-Ks4snhE3lHQdFXw-hRcBemRgQQaNMUJP-uzzCBSmZhOelXE2OsjQybD8q8Nwt7PO1-JtWDXEpXh7M0C4xOmt89oINbjJESYiCkmjacU8eRW9EZuZ3mOGhAyWf_9BQ9uFpK2BbWPMXgb26dn2QrjzKZnN1949CLNpQeRUtpWU"/>
+</div>
+<div class="flex-1">
+<h3 class="font-bold text-lg">Your Host: Min-Hee</h3>
+<p class="text-[#896561] dark:text-[#c4a4a1] text-sm italic">"I can't wait to show you my favorite food stalls!"</p>
+</div>
+<div class="flex gap-2">
+<button class="p-2 rounded-full border border-[#e6dcdb] dark:border-[#3d2a28] text-primary hover:bg-primary/10">
+<span class="material-symbols-outlined">chat_bubble</span>
+</button>
+<button class="p-2 rounded-full border border-[#e6dcdb] dark:border-[#3d2a28] text-primary hover:bg-primary/10">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Sidebar Actions -->
+<div class="space-y-4">
+<div class="bg-white dark:bg-[#2d1a18] p-6 rounded-xl border border-[#e6dcdb] dark:border-[#3d2a28] shadow-sm">
+<h4 class="font-bold mb-4 text-[#181211] dark:text-white">Actions</h4>
+<div class="flex flex-col gap-3">
+<button class="flex items-center gap-3 w-full px-4 py-3 rounded-lg bg-primary text-white font-bold transition-transform active:scale-95">
+<span class="material-symbols-outlined">download</span>
+<span>Download PDF Voucher</span>
+</button>
+<button class="flex items-center gap-3 w-full px-4 py-3 rounded-lg bg-primary/10 text-primary font-bold border border-primary/20 hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined">calendar_month</span>
+<span>Reschedule Tour</span>
+</button>
+<button class="flex items-center gap-3 w-full px-4 py-3 rounded-lg border border-[#e6dcdb] dark:border-[#3d2a28] text-[#896561] dark:text-[#c4a4a1] font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined">cancel</span>
+<span>Cancel Booking</span>
+</button>
+</div>
+</div>
+<div class="bg-white dark:bg-[#2d1a18] p-6 rounded-xl border border-[#e6dcdb] dark:border-[#3d2a28] shadow-sm">
+<h4 class="font-bold mb-2 text-[#181211] dark:text-white">Booking Info</h4>
+<div class="space-y-2 text-sm">
+<div class="flex justify-between">
+<span class="text-[#896561] dark:text-[#c4a4a1]">Status</span>
+<span class="font-bold text-green-600">Confirmed</span>
+</div>
+<div class="flex justify-between">
+<span class="text-[#896561] dark:text-[#c4a4a1]">Guests</span>
+<span class="font-bold">2 Adults</span>
+</div>
+<div class="flex justify-between">
+<span class="text-[#896561] dark:text-[#c4a4a1]">Total</span>
+<span class="font-bold">₩158,000</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-[#e6dcdb] dark:border-[#3d2a28] py-8 px-10 text-center text-[#896561] dark:text-[#c4a4a1] text-sm">
+<p>© 2024 Delicious Korea Food Tours. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</body></html>

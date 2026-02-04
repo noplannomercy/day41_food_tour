@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guest Experiences &amp; Gallery | Delicious Korea</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee3b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181211] dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation -->
+<div class="w-full flex justify-center border-b border-solid border-[#f4f0f0] dark:border-[#3a221f] bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="layout-content-container flex flex-col w-full max-w-[1200px]">
+<header class="flex items-center justify-between whitespace-nowrap px-10 py-3">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Tours</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Food Guide</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors text-primary" href="#">Gallery</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Reviews</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Book a Tour</span>
+</button>
+</div>
+</header>
+</div>
+</div>
+<main class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[1200px] flex-1 px-4 sm:px-10">
+<!-- Hero Section -->
+<div class="@container mb-8">
+<div class="@[480px]:p-0">
+<div class="flex min-h-[400px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-center justify-center p-4" data-alt="Tour group smiling and eating street food together" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCvWJWNIpQle1-RVJSbmNzVAoD51yUzzDLDzICclzhtUx9EPLpvu2SZ6IdOLHzzEhU8ESPFwrakHS9bc6H8XeSRMis8NkhBPg4r2y2KPDQyy0S6To3SfneXh-gFYl_rTQSj4gSA2-ZEBycnmrayiSX4gEY-LY42FZ7cDoNlrejLAXUg47HFCto3tqHrpH_4eBZSdgNpLd1GSd7e--tyPwAi1S771b8ePRreICKM_jN06iBBw0MT2btO8pJ_Zz6oEH0qtUvomqyXd3A");'>
+<div class="flex flex-col gap-2 text-center">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl">
+                                        Guest Experiences &amp; Gallery
+                                    </h1>
+<h2 class="text-white text-sm font-normal leading-normal @[480px]:text-xl opacity-90 max-w-2xl mx-auto">
+                                        Capturing the flavors of Seoul and the smiles of our global food explorers. Follow our journey through the markets.
+                                    </h2>
+</div>
+<div class="flex gap-4">
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Join a Tour</span>
+</button>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-white/20 backdrop-blur-md text-white text-base font-bold leading-normal border border-white/30">
+<span class="truncate">View Video Feed</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Filters -->
+<div class="flex flex-col mb-4">
+<h2 class="text-[#181211] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Explore the Feed</h2>
+<div class="flex gap-3 p-0 flex-wrap overflow-x-auto pb-4 scrollbar-hide">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-6 cursor-pointer">
+<p class="text-sm font-medium leading-normal">All Moments</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#3a221f] border border-[#f4f0f0] dark:border-none px-6 cursor-pointer hover:bg-gray-100 dark:hover:bg-[#4d322f]">
+<span class="material-symbols-outlined text-sm">lunch_dining</span>
+<p class="text-sm font-medium leading-normal">Street Food</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#3a221f] border border-[#f4f0f0] dark:border-none px-6 cursor-pointer hover:bg-gray-100 dark:hover:bg-[#4d322f]">
+<span class="material-symbols-outlined text-sm">skillet</span>
+<p class="text-sm font-medium leading-normal">Cooking Classes</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#3a221f] border border-[#f4f0f0] dark:border-none px-6 cursor-pointer hover:bg-gray-100 dark:hover:bg-[#4d322f]">
+<span class="material-symbols-outlined text-sm">storefront</span>
+<p class="text-sm font-medium leading-normal">Market Tours</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#3a221f] border border-[#f4f0f0] dark:border-none px-6 cursor-pointer hover:bg-gray-100 dark:hover:bg-[#4d322f]">
+<span class="material-symbols-outlined text-sm">nightlife</span>
+<p class="text-sm font-medium leading-normal">Night Life</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-[#3a221f] border border-[#f4f0f0] dark:border-none px-6 cursor-pointer hover:bg-gray-100 dark:hover:bg-[#4d322f]">
+<span class="material-symbols-outlined text-sm">group</span>
+<p class="text-sm font-medium leading-normal">Guest Portraits</p>
+</div>
+</div>
+</div>
+<!-- Photo Grid Section -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 pb-12">
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] cursor-pointer" data-alt="Tourists holding spicy rice cakes in a busy market" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBEiblCHUHiacXaipMIv1QLtBWXfiBPZlA8nqvensmtl5lWjXs0bSAOULNssSbQKvpy8LuLWzHJf2fkBCVPgPsLP32krogIke08F3t8Tz5twDDOIq9fAm_1UmegcEJz0g4Kz1dExXpKg-hCTLvvAoS7HG9iUJ14tIQChq08X5ZdAKtk9gquWGt11DFaIjqGKjDUz_1Sm2D1FvfyaUHjscPUmD941k77hekXl1wYGjG45PX6BTRkvs444waSjaU9yS7wEkYny33-KrA");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-sm font-bold leading-tight">Spicy Rice Cakes in Gwangjang</p>
+<div class="flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-white text-xs">favorite</span>
+<span class="text-white text-[10px]">1.2k</span>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] cursor-pointer" data-alt="Close up of a colorful bibimbap bowl in a wooden bowl" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgJM8cPrGP1nGAd9y0E6l5mxq-fdE81H5zLBd_MPDoeMpC_5TSz_WWvtU7yX-mbiJiNes7D8symx2p6XMq-sYZofcjKpyPBOsVKkvnFr1Dus7uDs9pdpiZKaYEaX7I0Ml98G7101ai3hIJWl8PjpywZuJKG_HdZszg1xM6keVnkOrmJpypyRn7nVDKOq6uzFn9ImIaXWUGnGYoeSOCdCMoY6q2xoieuu9u-y82iranbNpH8PkfegUPBEr8GbrFniL3coBLqQqWK78");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-sm font-bold leading-tight">Bibimbap Workshop</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] md:col-span-2 md:aspect-auto md:h-full cursor-pointer" data-alt="Crowded neon lit night market scene in Seoul" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrE_sJu1QNIrrrGli4GwmksQxrkZAkzWaq44q28T4px9z4cHJc4_c-BtD8iXCrsaSe1OJLALrtvFbPMbRV0p-6da0sStf5kCvL-v9QEkUz_Bm0LMelOZDlrD7U_ad43Gz6sz0rIthUGNJOdFqYQWLA2toaQj0riMRmqLWykoIL1IMt6zDB9xL6XeAJjbirzxYt2C9C4NHu7A7osxLkXfgVaT-aNXCSlTz5zuQGykjpY93Yq96uXdm3y9A3AIMzNtS98e0QZo31Zpg");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-base font-bold leading-tight">Night Market Vibes</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] cursor-pointer" data-alt="Traditional Korean tea service with small sweets" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDEUcm6jjDgAXznyftxVIGsBkdJeCRd3yLvTJv2naP_5yiI_cCoS3hJXQ4FFUh-tjurpckBQwvJEad6enFe-z7lHiiZ1-rM9W-qEk3GWaT90DnmjMm_gT4AE39mmuAQxZpRjfltRbEO1M5y90W2lJBjtdrkZpm8XpplyoIGJh5zos2S-DpxjGMhKF4_CvIOyaKIjw6lteSugxjYc2ue1v_fOCC6Bu6jdn_SZCkXT4tjR90ykH5WAtH3gcINLMjvGPX4SNdjg5MxKpU");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-sm font-bold leading-tight">Traditional Tea House</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] cursor-pointer" data-alt="People wearing aprons making kimchi together" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDYYFHk7KKezrp67jRCQq4an3lYvmR9KNgTnM4_bQ8a7mGRrrDF-Cij4PEqmOyLPa9jMXWQYLDccIpVCnbhc7FM0WYcSUwGq0zGtI-RTujSCuIDUJ1i6-8Z8CHKd-Nwee2qcB2cfmO7fjnc-8gEIMK7oDulWJPtWq6jv-0Dbd3AjtjXSq9sblHPgFqYlAxKwiwK7L_88YZvh1-LE7q9ttCZPIT37QGnBioVybckUfE4T_k_or-ZH52VAcuTL5cZ3s0b2nUqT-mpfHg");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-sm font-bold leading-tight">Kimchi Making Class</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] cursor-pointer" data-alt="Korean fried chicken platter with cold beer mugs" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAca24-Acoxoh1YdjvVSdbKWmaiFZ0d90B4KKTT93vIpn9moUaWlfbZUX7Pu0PdDcj8x6I7Wt3OrLLWaGTYeY_KD2ODvAootUJP8yGqOcBv9Ue1ZpinTPOBxAWvujkrZm-x_9tx6iCEUYSkD4DT18zbajnMrXEWUY_tiUI3N-bim_44X-NXCrOzS2lr7TtAHSYTfnjbDz4vXGFUma7q3PwBnzrzOc9YF838Yo4Tekin2RsgI5fCimaMpMu_mxvsv8Dd4xQF5TTwR2k");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-sm font-bold leading-tight">Chimaek Tour Night</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-cover bg-center aspect-[3/4] cursor-pointer" data-alt="Close up of steaming mandu dumplings on a tray" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwd3b4qvhhS8ud3fAL10cEJ7uOVHUZZ5v-Xrr7Dp75BYZT-q25y9B78AgJ5TW1TNUU2UhIiCH7lMXpICPpzyNrynFBZuwoX0ClCDSvpJpfD101mTw36BiYJloVOTIFw61TJhqB3-RW8URhG-ImwXR-eZpw1YXSUnL9pHH9iyAvIXwwDuI6Dj_-rfjeG2LBd_N3Lv6WWFfxAaBLNKMlLKJaciEh-9_JlVmTkstI42YwXdVWf-gIqyHfTvL8piTDYBwk9mgAi-2eXsE");'>
+<div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-full">
+<p class="text-white text-sm font-bold leading-tight">Dumpling Heaven</p>
+</div>
+</div>
+</div>
+<!-- Instagram Integrated Section -->
+<div class="bg-primary/10 dark:bg-primary/5 rounded-2xl p-8 mb-12 border border-primary/20">
+<div class="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+<div>
+<h3 class="text-2xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">photo_camera</span>
+                                    Join the Community
+                                </h3>
+<p class="text-[#181211]/70 dark:text-white/70">Share your food tour memories with <span class="font-bold text-primary">#DeliciousKoreaTours</span></p>
+</div>
+<button class="flex items-center gap-2 bg-white dark:bg-background-dark px-6 py-3 rounded-xl shadow-sm border border-gray-200 dark:border-gray-800 font-bold hover:shadow-md transition-shadow">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+                                Follow us @DeliciousKorea
+                            </button>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2">
+<div class="aspect-square rounded-lg bg-cover bg-center overflow-hidden" data-alt="Instagram user post featuring diverse street food skewers" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAbyeR4cQJMxS0Kl1lpYV3IS7OGMAD-XJAqbjih-HBm2GBCJz6sBF0reNsgDm5u45SNhg2hvqPxTDhsisdhtPtj7SuEJN-7nTnlomNAxJTPfqC0h9b7C-lLxW1wuUDiBwH3ffTg-Hv4zrD5oZnukoYNTuceVrHDCgHwKOxQybNQdZCkek0mU1SVAhrp-5GMFKZ5Qk32UgVPD-3WNXXb0xAyVgtXnPbF0IDO9h4to2VDHJBp0nxuDuN3z4y9unjTprmz-qIbk87j-2Y");'></div>
+<div class="aspect-square rounded-lg bg-cover bg-center overflow-hidden" data-alt="Instagram user post featuring group photo in traditional robes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuADVj0HTY8IgqJt_2sHYpYyuB6Q8Qo262AO47KnC0NmvV1SlaBHNNgwKRFAwPdYI2nsxyCYcy5cvPV2WQBCzUoKwFbvJaxzqVDHHvcCbDAm9b2_reKNWYTzFe-FoRRzyCMyY6YBYa9xHRhxb0gzQ8gj18Rtj60YgApEvUxBj1woN8UV_RKSfwlxoVC20RiZ6rv_C_7cUs9vrWCbCmfuMh9jJ0Ok3k29tvkmTDX6Kck-C7jGOD8MxvvraP7dn1gydTaE7ers2jMBttY");'></div>
+<div class="aspect-square rounded-lg bg-cover bg-center overflow-hidden" data-alt="Instagram user post featuring closeup of BBQ grilling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCnKQkkYG1HWhYDtEcaoPIjqAwCWRbgLfEMiN3GzwwR8v9DljUJijMOR3QMuT9wm7s4xmJL0A7MlwuCDCUqjtdulNWT65-k1kQtE9iVPtaWMM36CPJlxWh-FCldAHB41UhIbLF-BUIh9wrt9o0_7aZqcaZtcp_09YfI0BblZW15Iw7y6YTswzbmFwX1kovK2KmBM1cZ9O2JiVAiP1HvxsQUtxtm-p6FAMilzOYF5-LAcQvFBUuE9G3MP15cpk94yg3nNYXBBVWqx14");'></div>
+<div class="aspect-square rounded-lg bg-cover bg-center overflow-hidden" data-alt="Instagram user post featuring spicy seafood soup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDNrXyjAThtyg-FYdheRomzOPp8JMEAAD1zxf5QkZFl-wmHZ9I2ipqPgXzJWUQPChrm_qzrbHRJuCFXXuHMQxqJwTS0VXGfos5ipktEaipVhZlw3immWGpRlVZGwDRtrva8EiIXTZ7RqXHvr5ghNsAUedxXJ17lOq3B7GyccjtNKPI6YNo-oY82McQP9_gxbK9sjfwMueeh2JiU2rrh5mG_ONrUoxiDKAkPQD9HRmnFmQFuGRvCUEapbOa7gk_CTsBzXAyMoYVjmm8");'></div>
+<div class="aspect-square rounded-lg bg-cover bg-center overflow-hidden" data-alt="Instagram user post featuring street market merchant smiling" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBgnErEH9K5nQvpyYP8rlDsozpIKpXcBvkO1LaH8jsC18VhtSof2tsfzpEAk7c9M6EV7TrobUO_k-yyqeH5op6sFBIZbYyoEPoB1p_ob1Yf4UjNH9y8c7tVLMfKin8ywdvgeW-J2hwP1bcr60wHr8t4y0TMYB1H3_7eYhYLc58Gc-xkRJW4TssROGpu8CAH7jVwXRSAH7-XGWkx_6NcvTT0mojbqW96w8DJIBH3Abo89j13VKJXl76eCRnTYr7HcSUDWeb0_kVy4Bo");'></div>
+<div class="aspect-square rounded-lg bg-cover bg-center overflow-hidden" data-alt="Instagram user post featuring rainbow colored kimbap" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDbGyNIjobyNdbeYZ13IxJhLE9E-HBBBMrDWOxNrguTu9jCW5rDkTm9uyRElTN8hLaReGzo2o51FvY8lhe-MykOQz-i5CsAFnfTEl1Fdc_J4RvSvr29JDj5b1Wb0-aqBhSpdaJ3Ssr7J2RDXLEIlC55Fh_iAfx2YroOphZ2pOr4pp8K-VDBgA5eExR60pATK4hcc7glwdmO6ddJaNGI-SIyvF7YdAhPWhnfY5BSfBlYTQo8CfMacnDDwl-5Rpyb8-GnMkziGqS4_qA");'></div>
+</div>
+</div>
+<!-- Testimonial Section -->
+<div class="mb-12">
+<h2 class="text-[#181211] dark:text-white text-[22px] font-bold pb-6">What our guests say</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-white dark:bg-[#3a221f] p-6 rounded-xl shadow-sm border border-[#f4f0f0] dark:border-none">
+<div class="flex gap-1 text-primary mb-3">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-[#181211] dark:text-white font-medium mb-4 italic">"The Gwangjang market tour was the highlight of our Seoul trip! Our guide knew every hidden stall and the food was incredible. Highly recommend the cooking class too!"</p>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-gray-200" data-alt="Profile photo of a male reviewer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBv6-CvHvatfs_zFpsD5hMgLW7mpT0sAQZU3g_jDyKRRxWUPAvlv7u17z4BxgJOKgThS30Le7kjJc4JmAscMHcXxDrXu9ToIw2m68SQZzs_DKkPrjchNkfgqDoaE-sOBHnAERBzvUO217JL_8EPKK5PWgBC6iz3-FIW1UzL1UX7YX27kbrunfJo3oaMnPv_7epwDKKqBTK-Ld0X-7LuzK8IXbDQTkK02YBQ88X088iGb6fya3B_aTk50HIZXvRp2Wmd7uYYM-ZCuQE"); background-size: cover;'></div>
+<div>
+<p class="text-sm font-bold">David S.</p>
+<p class="text-[10px] opacity-60">United Kingdom</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-[#3a221f] p-6 rounded-xl shadow-sm border border-[#f4f0f0] dark:border-none">
+<div class="flex gap-1 text-primary mb-3">
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+<span class="material-symbols-outlined fill-1">star</span>
+</div>
+<p class="text-[#181211] dark:text-white font-medium mb-4 italic">"I've done food tours all over Asia and this was by far the best. Very informative, authentic, and we left absolutely stuffed! The photos they took of us were a great bonus."</p>
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-gray-200" data-alt="Profile photo of a female reviewer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_NOuT6B149C4EPRV5XEUIdZCyZEWCyNFcWYyG9uUJEqAGw4KB7Pf1tnB8gmG4JygAgYXvcIBbmSDUhwAPfiwv29_LqlRYrHy3g-Qf-ujmv0g4v17G1zSb1why8LJn6cyjmJrq8C4hjbmNKdM9d918H7SJhgH-WIJbLNUDLSt-xiUc2EqNR9IBwBUIQMguL0DbnH-iOpGFNQ6cEgr9ttvOKaPico1O45Jn71HwMyWaNoGJXHHpaHEoG_BnvBHIciJJ9Ua6mmv_R7c"); background-size: cover;'></div>
+<div>
+<p class="text-sm font-bold">Elena R.</p>
+<p class="text-[10px] opacity-60">Italy</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Call to Action -->
+<div class="flex flex-col items-center text-center py-16 px-4 bg-primary rounded-2xl mb-12 text-white">
+<h2 class="text-3xl font-black mb-4">Ready for your own Korean food adventure?</h2>
+<p class="max-w-xl mb-8 opacity-90">Book your tour now and let us show you the real heart of Seoul's culinary scene. Limited spots available for the night market tours!</p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors">
+                                Book Now
+                            </button>
+<button class="bg-primary-dark border-2 border-white text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-colors">
+                                Gift a Tour
+                            </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-white dark:bg-background-dark border-t border-[#f4f0f0] dark:border-[#3a221f] py-12 flex justify-center">
+<div class="layout-content-container flex flex-col w-full max-w-[1200px] px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+<span class="text-xl font-bold text-[#181211] dark:text-white">Delicious Korea</span>
+</div>
+<p class="text-sm opacity-60 leading-relaxed">Seoul's #1 food tour experience. Connecting hungry travelers with the authentic heart of Korean cuisine since 2015.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold">Company</h4>
+<a class="text-sm opacity-70 hover:text-primary" href="#">About Us</a>
+<a class="text-sm opacity-70 hover:text-primary" href="#">Our Guides</a>
+<a class="text-sm opacity-70 hover:text-primary" href="#">Press Kit</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold">Support</h4>
+<a class="text-sm opacity-70 hover:text-primary" href="#">Help Center</a>
+<a class="text-sm opacity-70 hover:text-primary" href="#">Booking Policy</a>
+<a class="text-sm opacity-70 hover:text-primary" href="#">Contact Us</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold">Newsletter</h4>
+<p class="text-sm opacity-60">Get secret food recipes and tour discounts.</p>
+<div class="flex gap-2">
+<input class="bg-gray-100 dark:bg-[#3a221f] border-none rounded-lg text-sm px-4 py-2 w-full" placeholder="Your email" type="email"/>
+<button class="bg-primary p-2 rounded-lg text-white">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center border-t border-[#f4f0f0] dark:border-[#3a221f] pt-8 opacity-60 text-xs">
+<p>© 2024 Delicious Korea. All rights reserved.</p>
+<div class="flex gap-6 mt-4 md:mt-0">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">Cookie Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

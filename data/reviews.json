@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "tourId": "1",
+    "author": "Sarah Jenkins",
+    "country": "United Kingdom",
+    "rating": 5,
+    "content": "The Gwangjang market tour was the highlight of our Seoul trip. Our guide knew every vendor and we tried things we never would have ordered ourselves!",
+    "date": "2024-12-15",
+    "avatar": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100",
+    "tourName": "Gwangjang Market Food Tour"
+  },
+  {
+    "id": "2",
+    "tourId": "3",
+    "author": "Mark Thompson",
+    "country": "United States",
+    "rating": 5,
+    "content": "The BBQ night was fantastic. Learning how to properly grill and the etiquette of drinking soju made us feel like true Seoulites. Highly recommend!",
+    "date": "2024-12-10",
+    "avatar": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=100",
+    "tourName": "K-BBQ & Nightlife Experience"
+  },
+  {
+    "id": "3",
+    "tourId": "2",
+    "author": "Elena Rodriguez",
+    "country": "Spain",
+    "rating": 5,
+    "content": "Everything was perfectly organized. The street food safari was a blast and we found amazing spots that aren't in any of our guidebooks.",
+    "date": "2024-12-08",
+    "avatar": "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100",
+    "tourName": "Myeongdong Night Street Food"
+  },
+  {
+    "id": "4",
+    "tourId": "6",
+    "author": "James Chen",
+    "country": "Australia",
+    "rating": 5,
+    "content": "The cooking class exceeded all expectations. I can now make authentic bibimbap at home! The instructor was patient and so knowledgeable.",
+    "date": "2024-12-05",
+    "avatar": "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=100",
+    "tourName": "Authentic Home Cooking Class"
+  },
+  {
+    "id": "5",
+    "tourId": "1",
+    "author": "Marie Dubois",
+    "country": "France",
+    "rating": 4,
+    "content": "Great tour with lots of food! The bindaetteok was incredible. Only small note - wish we had a bit more time at each stop.",
+    "date": "2024-11-28",
+    "avatar": "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=100",
+    "tourName": "Gwangjang Market Food Tour"
+  },
+  {
+    "id": "6",
+    "tourId": "4",
+    "author": "Tanaka Yuki",
+    "country": "Japan",
+    "rating": 5,
+    "content": "Fresh sashimi straight from the market! The guide helped us negotiate prices and choose the best fish. An unforgettable experience.",
+    "date": "2024-11-20",
+    "avatar": "https://images.pexels.com/photos/2726111/pexels-photo-2726111.jpeg?auto=compress&cs=tinysrgb&w=100",
+    "tourName": "Noryangjin Fish Market Adventure"
+  }
+]

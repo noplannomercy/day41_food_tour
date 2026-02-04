@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee3b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<title>Write a Review - Delicious Korea</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181211] dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 dark:border-b-gray-800 px-10 py-3 bg-white dark:bg-background-dark sticky top-0 z-50">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-6">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8 items-center">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Tours</a>
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Locations</a>
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-[#181211] dark:text-gray-300 text-sm font-medium hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-10 px-4 md:px-0">
+<div class="layout-content-container flex flex-col max-w-[800px] flex-1">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 py-2">
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:underline" href="#">Home</a>
+<span class="text-gray-400 text-sm font-medium">/</span>
+<a class="text-gray-500 dark:text-gray-400 text-sm font-medium hover:underline" href="#">My Tours</a>
+<span class="text-gray-400 text-sm font-medium">/</span>
+<span class="text-[#181211] dark:text-white text-sm font-bold">Write a Review</span>
+</div>
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-3 py-6">
+<div class="flex min-w-72 flex-col gap-2">
+<h1 class="text-[#181211] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Share Your Food Experience</h1>
+<p class="text-gray-600 dark:text-gray-400 text-lg font-normal">Your feedback helps us make our Seoul food tours even better!</p>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-3 py-6 px-6 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm mb-8">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-[#181211] dark:text-white text-base font-semibold">Step 2 of 3: Your Feedback</p>
+<p class="text-primary text-sm font-bold">60% Complete</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-800 h-2.5 w-full overflow-hidden">
+<div class="h-full rounded-full bg-primary transition-all duration-500" style="width: 60%;"></div>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-sm italic">Almost there! Your review will be live shortly.</p>
+</div>
+<!-- Review Form Section -->
+<div class="bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden">
+<!-- Headline Section -->
+<div class="px-8 pt-8">
+<h3 class="text-[#181211] dark:text-white tracking-tight text-2xl font-bold leading-tight">Rate your tour: <span class="text-primary italic">"Myeongdong Night Market Feast"</span></h3>
+</div>
+<!-- Form Content -->
+<div class="p-8 space-y-8">
+<!-- Star Rating -->
+<div class="flex flex-col gap-4">
+<label class="text-base font-semibold text-gray-700 dark:text-gray-300">Overall Rating</label>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-4xl text-yellow-400 cursor-pointer fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-yellow-400 cursor-pointer fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-yellow-400 cursor-pointer fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-yellow-400 cursor-pointer fill-icon">star</span>
+<span class="material-symbols-outlined text-4xl text-gray-300 dark:text-gray-700 cursor-pointer">star</span>
+</div>
+</div>
+<!-- Photo Upload -->
+<div class="flex flex-col gap-4">
+<label class="text-base font-semibold text-gray-700 dark:text-gray-300">Upload photos of your favorite dishes</label>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+<div class="aspect-square relative group cursor-pointer border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-lg flex flex-col items-center justify-center text-gray-400 hover:border-primary hover:text-primary transition-all">
+<span class="material-symbols-outlined text-3xl">add_a_photo</span>
+<span class="text-xs mt-2 font-medium">Add Photo</span>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Close up of delicious Korean Tteokbokki" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACfF-8WfIhbfERy4Z_sxP1udlAi4fhv4Fm-i4HPLSICaRjkTpAXEzyrs6Hl2Klo4ctudoI2_ppH5SnhBJMqWABRGKQacvqqTNPSn7hKPs2T7ZBKIhTMx1NzXtyMupIxJitxjqjhl4hsEiJFsw8bEPsa2JRvqW3c4za0u24Td5xoCREyVWtBLSs-3DLYjrqAZfjptsWzl_uOCGurfntM9Doky8MCn_knwHaFVSfzUJtKlUy98pp8KUUlzevSyijdcJnH1qhEU25Bno"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full p-1 hover:bg-red-500">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Korean BBQ sizzling on a grill" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjXUwVaThxwjanRoAnjZvis7D6sknFdCay9-Y_kRQkMOPZ9xlEgzZ95SFDD-q1Kf_jBU68xq-saCDC5n2e0X7JGLlObrc3NiCJe7dvSftF4uJo9JB2OW-vjGOnyPYI9lVd9XfqJRUJ15kogx_-ZMaaSD8jCZgAm58zUFJ-Cg_w10WriaBHZjl2WwB_z4XaGy-4F8deO8bJ_M7lIjfWVYPcyZ6ai5-tD35IAmiMuZth3Da_RvBIqCXuSWyDte1kKQeqat29DkGglhA"/>
+<button class="absolute top-1 right-1 bg-black/50 text-white rounded-full p-1 hover:bg-red-500">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Testimonial -->
+<div class="flex flex-col gap-4">
+<label class="text-base font-semibold text-gray-700 dark:text-gray-300">Write your testimonial</label>
+<textarea class="w-full min-h-[160px] p-4 rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-primary focus:border-primary text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-600" placeholder="Tell us about the highlights of your tour, the food, and your guide..."></textarea>
+<div class="flex justify-between items-center text-xs text-gray-500">
+<span>Minimum 50 characters recommended</span>
+<span>0 / 1000</span>
+</div>
+</div>
+<!-- Preview Message (Thank You Preview) -->
+<div class="p-4 bg-primary/5 dark:bg-primary/10 rounded-lg border border-primary/20">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary">info</span>
+<div>
+<p class="text-sm font-bold text-primary">After submitting, you'll see:</p>
+<p class="text-sm text-gray-700 dark:text-gray-300 mt-1 italic">"Kamsahamnida! Thank you for sharing your journey with Delicious Korea. Your review helps other travelers discover the magic of Seoul's food scene."</p>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-800">
+<button class="px-6 py-2.5 text-gray-600 dark:text-gray-400 font-bold hover:text-gray-800 dark:hover:text-white transition-colors">
+                                    Back
+                                </button>
+<div class="flex gap-4">
+<button class="px-6 py-2.5 rounded-lg border border-gray-300 dark:border-gray-700 font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+                                        Save Draft
+                                    </button>
+<button class="px-10 py-2.5 rounded-lg bg-primary text-white font-bold shadow-lg shadow-primary/20 hover:brightness-110 active:scale-95 transition-all">
+                                        Submit Review
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sidebar Info (Desktop Only) -->
+<div class="mt-8 p-6 bg-gray-100 dark:bg-gray-800/50 rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-primary/20 p-3 rounded-full">
+<span class="material-symbols-outlined text-primary">card_giftcard</span>
+</div>
+<div>
+<h4 class="font-bold text-gray-800 dark:text-white">Reviewer Reward</h4>
+<p class="text-sm text-gray-600 dark:text-gray-400">Submit this review to receive a 10% discount on your next tour!</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</div>
+</div>
+</main>
+<!-- Footer Footer (Minimal) -->
+<footer class="mt-auto py-8 border-t border-gray-200 dark:border-gray-800 px-10 text-center">
+<p class="text-gray-500 dark:text-gray-400 text-sm">© 2024 Delicious Korea Food Tours. All rights reserved.</p>
+</footer>
+</div>
+</div>
+</body></html>

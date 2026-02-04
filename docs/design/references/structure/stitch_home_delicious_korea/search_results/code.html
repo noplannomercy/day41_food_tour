@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Search Results - Delicious Korea</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee3b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#181211] dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Top Navigation Bar -->
+<header class="flex items-center justify-between border-b border-solid border-[#f4f0f0] dark:border-[#3a201d] px-10 py-3 bg-white dark:bg-[#1a0d0c] sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#181211] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#896561] flex border-none bg-[#f4f0f0] dark:bg-[#3a201d] items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#181211] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#f4f0f0] dark:bg-[#3a201d] focus:border-none h-full placeholder:text-[#896561] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search for tours..." value="Seoul Street Food"/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden lg:flex items-center gap-9">
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Tours</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Blog</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Guides</a>
+<a class="text-[#181211] dark:text-white text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:brightness-110">
+<span class="truncate">Sign Up</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#f4f0f0] dark:bg-[#3a201d] text-[#181211] dark:text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#e8e4e4] dark:hover:bg-[#4d2c28]">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-[1200px] px-4 md:px-10">
+<!-- Breadcrumbs -->
+<div class="flex flex-wrap gap-2 py-2">
+<a class="text-[#896561] text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Home</a>
+<span class="text-[#896561] text-sm font-medium leading-normal">/</span>
+<span class="text-[#181211] dark:text-white text-sm font-medium leading-normal">Search Results</span>
+</div>
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-3 py-6">
+<div class="flex min-w-72 flex-col gap-1">
+<h1 class="text-[#181211] dark:text-white text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]">Search Results for 'Seoul Street Food'</h1>
+<p class="text-[#896561] text-base font-normal leading-normal">128 experiences and stories found in Seoul</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 shrink-0">
+<div class="flex flex-col gap-6 bg-white dark:bg-[#1a0d0c] p-6 rounded-xl border border-[#f4f0f0] dark:border-[#3a201d]">
+<!-- Category Filter -->
+<div class="flex flex-col gap-4">
+<div class="flex flex-col">
+<h2 class="text-[#181211] dark:text-white text-base font-bold leading-normal">Categories</h2>
+<p class="text-[#896561] text-sm font-normal leading-normal">Filter by type</p>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 text-primary cursor-pointer">
+<span class="material-symbols-outlined text-lg">grid_view</span>
+<p class="text-sm font-semibold leading-normal">All Results</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-lg text-[#896561] group-hover:text-primary">tour</span>
+<p class="text-[#181211] dark:text-white text-sm font-medium leading-normal">Food Tours</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-lg text-[#896561] group-hover:text-primary">article</span>
+<p class="text-[#181211] dark:text-white text-sm font-medium leading-normal">Blog Posts</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-lg text-[#896561] group-hover:text-primary">explore</span>
+<p class="text-[#181211] dark:text-white text-sm font-medium leading-normal">Travel Guides</p>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d] transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-lg text-[#896561] group-hover:text-primary">skillet</span>
+<p class="text-[#181211] dark:text-white text-sm font-medium leading-normal">Cooking Classes</p>
+</div>
+</div>
+</div>
+<div class="h-px bg-[#f4f0f0] dark:bg-[#3a201d]"></div>
+<!-- Price Range Filter -->
+<div class="flex flex-col gap-4">
+<h3 class="text-[#181211] dark:text-white text-base font-bold leading-normal">Price Range</h3>
+<div class="flex flex-col gap-3">
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary h-5 w-5 border-[#e0dad9] bg-transparent" type="checkbox"/>
+<span class="text-sm text-[#181211] dark:text-white font-medium">Under $50</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-primary h-5 w-5 border-[#e0dad9] bg-transparent" type="checkbox"/>
+<span class="text-sm text-[#181211] dark:text-white font-medium">$50 - $100</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary h-5 w-5 border-[#e0dad9] bg-transparent" type="checkbox"/>
+<span class="text-sm text-[#181211] dark:text-white font-medium">$100 - $200</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer">
+<input class="rounded text-primary focus:ring-primary h-5 w-5 border-[#e0dad9] bg-transparent" type="checkbox"/>
+<span class="text-sm text-[#181211] dark:text-white font-medium">$200+</span>
+</label>
+</div>
+</div>
+<div class="h-px bg-[#f4f0f0] dark:bg-[#3a201d]"></div>
+<button class="w-full bg-primary/10 text-primary py-2 rounded-lg font-bold text-sm hover:bg-primary/20 transition-colors">
+                                    Reset Filters
+                                </button>
+</div>
+</aside>
+<!-- Results Content -->
+<div class="flex-1 flex flex-col gap-6">
+<!-- Filter Tabs (Desktop view context) -->
+<div class="flex gap-4 border-b border-[#f4f0f0] dark:border-[#3a201d] pb-px">
+<button class="pb-3 px-1 border-b-2 border-primary text-primary font-bold text-sm">Most Relevant</button>
+<button class="pb-3 px-1 border-b-2 border-transparent text-[#896561] font-medium text-sm hover:text-[#181211] dark:hover:text-white">Newest First</button>
+<button class="pb-3 px-1 border-b-2 border-transparent text-[#896561] font-medium text-sm hover:text-[#181211] dark:hover:text-white">Price: Low to High</button>
+</div>
+<!-- Tour Card 1 -->
+<div class="group bg-white dark:bg-[#1a0d0c] rounded-xl border border-[#f4f0f0] dark:border-[#3a201d] overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition-shadow">
+<div class="w-full sm:w-64 h-48 sm:h-auto overflow-hidden shrink-0">
+<img alt="Busy Seoul street market with spicy food stalls" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Seoul street food market with vibrant stalls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjAyL6YK7_XE8T0EkbER8qt8p63sX_Sr1eIpmhy3y4KHV9VlGGuCzoZKM7f7fwZYJpq_MwuiTCeai3Bdc6ZyVE4VQveuqc0Goe9BbGd9PvhitZeJA6fFAnOHMVvQGDs9S3iTuefp-iivrzVI-to-jXdI8peAOEgiuOxHDYynvCa15dkseD0P4F7lntyZh_D2fqPIknLgNJ_nZv1A_tfB7yN7NJxV1BPpF8l6eDJDHcanYVLn67gEzRLiKIAxuPiQ62r22VPr3y8M"/>
+</div>
+<div class="p-6 flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase font-bold tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded">Tour</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-lg fill-1">star</span>
+<span class="text-sm font-bold">4.9</span>
+<span class="text-xs text-[#896561]">(328 reviews)</span>
+</div>
+</div>
+<h3 class="text-xl font-bold text-[#181211] dark:text-white group-hover:text-primary transition-colors">Myeongdong Evening Street Food Safari</h3>
+<p class="text-sm text-[#896561] line-clamp-2">Explore the bustling stalls of Myeongdong with a local guide. Taste 10+ legendary snacks from Tteokbokki to Hotteok.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex flex-col">
+<span class="text-xs text-[#896561]">From</span>
+<span class="text-xl font-black text-primary">$65</span>
+</div>
+<button class="px-5 py-2 bg-[#181211] dark:bg-primary text-white text-sm font-bold rounded-lg hover:brightness-125 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Blog Post Card -->
+<div class="group bg-white dark:bg-[#1a0d0c] rounded-xl border border-[#f4f0f0] dark:border-[#3a201d] overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition-shadow">
+<div class="w-full sm:w-64 h-48 sm:h-auto overflow-hidden shrink-0">
+<img alt="Close up of delicious Korean Tteokbokki" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of delicious Korean Tteokbokki" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4NOmZc7Q3m17pG_eHwinSLjxFTz597UX5uBLxrAOmsrTpToZ6dUJ_Su7k87ORZuZ1lhLUJ_zkU2JvjMuriWEAUrKEj2EMUzk-D21UOAvNHg6zocZ4CEd1ZW4EjIaYHD83hM2weh6J07Lhds_ksYuNziRrcsWeGVGTvoUEdolV8Z0ZpQDnbnTBOnSSWEferBUJvh1GDYAK6jpzqQniRSV3cWwpYwKJnlRrq20ry8eJWBSIZae1VzoA_losO5HYIZVJzK-vtx5bQLg"/>
+</div>
+<div class="p-6 flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase font-bold tracking-wider text-blue-500 bg-blue-500/10 px-2 py-0.5 rounded">Blog</span>
+<span class="text-xs text-[#896561]">Published Oct 12, 2023</span>
+</div>
+<h3 class="text-xl font-bold text-[#181211] dark:text-white group-hover:text-primary transition-colors">Top 10 Hidden Street Food Gems in Gwangjang Market</h3>
+<p class="text-sm text-[#896561] line-clamp-2">Move beyond the main alleys. We discovered the best bindaetteok and mayak kimbap that only the locals know about.</p>
+</div>
+<div class="mt-4">
+<a class="inline-flex items-center gap-2 text-primary text-sm font-bold hover:gap-3 transition-all" href="#">
+                                            Read More <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Guide Card -->
+<div class="group bg-white dark:bg-[#1a0d0c] rounded-xl border border-[#f4f0f0] dark:border-[#3a201d] overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition-shadow">
+<div class="w-full sm:w-64 h-48 sm:h-auto overflow-hidden shrink-0">
+<img alt="A group of people eating together in Korea" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Group of people enjoying Korean food" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYiuymdmmZpasEdbsNedmJDxMxiQkG31aPYatSBcqKq9n-FcTHHQj7EVwXjad5HSPkPLbFUWbgAf0cfi47GVVz3sDFt8-9pgh1Yd1vr4fHd8Fnmp9SUKtZxk9Z6FJLHDF7aBiCuyqLbpmbKDKIZsU9wkY_gomi8vWbcG25L763mcWotQKg_q_wCPfWXHQSbIjxfwZ9Ckiy0XCo1fRJVMv4Z04yMav3QybFhn122QjnnwofLm9f6k3MtH4zdlK635i-LtcWeHZiifs"/>
+</div>
+<div class="p-6 flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase font-bold tracking-wider text-emerald-500 bg-emerald-500/10 px-2 py-0.5 rounded">Guide</span>
+<span class="text-xs text-[#896561]">15 min read</span>
+</div>
+<h3 class="text-xl font-bold text-[#181211] dark:text-white group-hover:text-primary transition-colors">The Ultimate Guide to Korean Street Food Etiquette</h3>
+<p class="text-sm text-[#896561] line-clamp-2">How to pay, where to stand, and how to use the communal broth cups like a pro. Avoid common tourist mistakes.</p>
+</div>
+<div class="mt-4">
+<button class="px-5 py-2 border-2 border-primary text-primary text-sm font-bold rounded-lg hover:bg-primary hover:text-white transition-all">Download Guide</button>
+</div>
+</div>
+</div>
+<!-- Tour Card 2 -->
+<div class="group bg-white dark:bg-[#1a0d0c] rounded-xl border border-[#f4f0f0] dark:border-[#3a201d] overflow-hidden flex flex-col sm:flex-row hover:shadow-lg transition-shadow">
+<div class="w-full sm:w-64 h-48 sm:h-auto overflow-hidden shrink-0">
+<img alt="Variety of colorful Korean street snacks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Variety of colorful Korean street snacks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe5QOWq_Mmss5i49VbDfOWYSCr7WPjXXXiderNRoa-z8zgTb4EAJ7y2tjspW39IG6eAYesr0nudr4Hp7qkOwl14tJEBPpTRaGJ1K8_MbuebZM5ERdaFikMTz9abpL-Zakkpt5DywYCOo2u82KEdvDRiJ-ffaKBOhnX16rUHbH9Ih5yYkSTBWJJAOBNWXFlLs6lyfxCQeOVQm-1LBf0n491_XaBFukNyv4N0lg9u5fxv_68kyv3M6Aku24vx60vCqHtI0eVkfBPgGk"/>
+</div>
+<div class="p-6 flex flex-col justify-between flex-1">
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase font-bold tracking-wider text-primary bg-primary/10 px-2 py-0.5 rounded">Tour</span>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-yellow-500 text-lg fill-1">star</span>
+<span class="text-sm font-bold">4.7</span>
+<span class="text-xs text-[#896561]">(152 reviews)</span>
+</div>
+</div>
+<h3 class="text-xl font-bold text-[#181211] dark:text-white group-hover:text-primary transition-colors">Hongdae Youth &amp; Flavor Night Tour</h3>
+<p class="text-sm text-[#896561] line-clamp-2">Vibe with the youth of Seoul! A high-energy tour through Hongdae's best pojangmachas and trendy street eats.</p>
+</div>
+<div class="flex items-center justify-between mt-4">
+<div class="flex flex-col">
+<span class="text-xs text-[#896561]">From</span>
+<span class="text-xl font-black text-primary">$55</span>
+</div>
+<button class="px-5 py-2 bg-[#181211] dark:bg-primary text-white text-sm font-bold rounded-lg hover:brightness-125 transition-all">Book Now</button>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="flex justify-center items-center gap-2 py-8">
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0f0] dark:border-[#3a201d] text-[#896561] hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d]">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="size-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0f0] dark:border-[#3a201d] text-[#181211] dark:text-white font-medium hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d]">2</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0f0] dark:border-[#3a201d] text-[#181211] dark:text-white font-medium hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d]">3</button>
+<span class="px-2 text-[#896561]">...</span>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0f0] dark:border-[#3a201d] text-[#181211] dark:text-white font-medium hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d]">12</button>
+<button class="size-10 flex items-center justify-center rounded-lg border border-[#f4f0f0] dark:border-[#3a201d] text-[#896561] hover:bg-[#f4f0f0] dark:hover:bg-[#3a201d]">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-[#1a0d0c] border-t border-[#f4f0f0] dark:border-[#3a201d] py-12 px-10">
+<div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-2xl">restaurant</span>
+<h2 class="text-lg font-bold text-[#181211] dark:text-white">Delicious Korea</h2>
+</div>
+<p class="text-sm text-[#896561]">Making authentic Korean food culture accessible and unforgettable for everyone visiting Seoul.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest">Tours</h4>
+<ul class="flex flex-col gap-2 text-sm text-[#896561]">
+<li><a class="hover:text-primary" href="#">Street Food Tours</a></li>
+<li><a class="hover:text-primary" href="#">Night Market Safari</a></li>
+<li><a class="hover:text-primary" href="#">Traditional Market Tours</a></li>
+<li><a class="hover:text-primary" href="#">Private Experiences</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest">Resources</h4>
+<ul class="flex flex-col gap-2 text-sm text-[#896561]">
+<li><a class="hover:text-primary" href="#">Food Blog</a></li>
+<li><a class="hover:text-primary" href="#">Dining Guides</a></li>
+<li><a class="hover:text-primary" href="#">Travel Tips</a></li>
+<li><a class="hover:text-primary" href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-bold text-sm uppercase tracking-widest">Connect</h4>
+<div class="flex gap-4">
+<a class="size-10 rounded-full bg-[#f4f0f0] dark:bg-[#3a201d] flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="size-10 rounded-full bg-[#f4f0f0] dark:bg-[#3a201d] flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="size-10 rounded-full bg-[#f4f0f0] dark:bg-[#3a201d] flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-[1200px] mx-auto mt-12 pt-8 border-t border-[#f4f0f0] dark:border-[#3a201d] flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-[#896561]">
+<p>© 2024 Delicious Korea. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-[#181211] dark:hover:text-white" href="#">Privacy Policy</a>
+<a class="hover:text-[#181211] dark:hover:text-white" href="#">Terms of Service</a>
+<a class="hover:text-[#181211] dark:hover:text-white" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

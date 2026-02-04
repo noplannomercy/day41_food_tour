@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Delicious Korea - Food &amp; Culture Guide</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee3b2b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221210",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#181211] dark:text-white transition-colors duration-200">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-[#f4f0f0] dark:border-white/10">
+<div class="max-w-[1200px] mx-auto px-4 lg:px-10 py-3 flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-[#181211] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-3xl">restaurant</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Delicious Korea</h2>
+</div>
+<div class="hidden lg:flex items-center gap-9">
+<a class="text-[#181211] dark:text-white/80 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Tours</a>
+<a class="text-primary text-sm font-bold leading-normal" href="#">Food Guide</a>
+<a class="text-[#181211] dark:text-white/80 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Etiquette</a>
+<a class="text-[#181211] dark:text-white/80 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">About Us</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden md:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full overflow-hidden">
+<div class="text-[#896561] flex border-none bg-[#f4f0f0] dark:bg-white/5 items-center justify-center pl-4">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-[#f4f0f0] dark:bg-white/5 text-[#181211] dark:text-white focus:ring-0 h-full placeholder:text-[#896561] px-4 pl-2 text-sm" placeholder="Search guides..." value=""/>
+</div>
+</label>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span>Book a Tour</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto pb-20">
+<!-- Hero Section -->
+<div class="px-4 py-8">
+<div class="@container">
+<div class="flex min-h-[420px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center" data-alt="Stunning aerial view of Seoul at night with vibrant lights" style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-8vcs42_hag_-Y9cf48VGjUJODUAtROcxOyLLcloD6QVX-sDw4lHOIDIreI03mgnAbHAGxWme1SuabdCgGWRYgATfy4BRfiO_uG8E4aOeMoPcSVsEvuQMfk2iRgBtgNwclarDSb3kwvFixMoeXilMB2wf3IJMlLPdC7HaNMZctLt63ti2SxZCsFLmZXUHlG4wDNdwc_Vj2BYSTXeYu1umdsQwitRXcWnDI29oPXd-p_Tqw-tGKuZk7wrvWtb6DAH_Ficb1YLxOGw");'>
+<div class="max-w-2xl flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-tight tracking-tight md:text-6xl">
+                            Experience the Flavors of Korea
+                        </h1>
+<p class="text-white/90 text-lg font-medium leading-relaxed max-w-xl mx-auto">
+                            Your ultimate guide to the best eats, hidden gems, and dining culture in Seoul. Written by locals, loved by travelers.
+                        </p>
+</div>
+<button class="flex min-w-[180px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-[0.015em] hover:scale-105 transition-transform">
+<span>Start Reading</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Categories / Tabs -->
+<div class="px-4 mb-8">
+<div class="flex border-b border-[#e6dcdb] dark:border-white/10 gap-8 overflow-x-auto no-scrollbar">
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-primary text-primary pb-4 pt-2 whitespace-nowrap" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">All Posts</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#896561] hover:text-[#181211] dark:hover:text-white pb-4 pt-2 whitespace-nowrap" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Etiquette</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#896561] hover:text-[#181211] dark:hover:text-white pb-4 pt-2 whitespace-nowrap" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Must-Try Dishes</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#896561] hover:text-[#181211] dark:hover:text-white pb-4 pt-2 whitespace-nowrap" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Hidden Gems</p>
+</a>
+<a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#896561] hover:text-[#181211] dark:hover:text-white pb-4 pt-2 whitespace-nowrap" href="#">
+<p class="text-sm font-bold tracking-[0.015em]">Street Food</p>
+</a>
+</div>
+</div>
+<!-- Featured Card Section -->
+<div class="px-4 mb-12">
+<div class="bg-white dark:bg-white/5 rounded-xl overflow-hidden shadow-sm border border-[#f4f0f0] dark:border-white/5 transition-all hover:shadow-md">
+<div class="flex flex-col @xl:flex-row">
+<div class="w-full @xl:w-3/5 bg-center bg-no-repeat aspect-video @xl:aspect-auto bg-cover" data-alt="Traditional Korean table spread with many side dishes" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCVCZPI_uQqn561xsdbAiFWOvt2uPc66HSj9OFQMxPxgz160LTlESyyL1GYViRo6hXdk7L34f1WBCb6uRqpqklCDzQzl0JVTFfV5sAphStPVvp52CN9VjrgLj_Dj8FO5Tb1CzCrrkYPDXHtpeIBrJxglYbdTj9uYrG4J8KSCxEbGvM9T10VeLKziCLqS4L0w-Rh1YMhOH3Xn0wdgKIJCrSE0QGgVl1tGVvqyd8rJUceb207VnahfLv7GbiC3EoSMcFpQBdGvDLEK6Y");'>
+</div>
+<div class="flex w-full grow flex-col justify-center gap-4 p-6 md:p-10">
+<div class="flex items-center gap-2">
+<span class="text-primary text-xs font-bold uppercase tracking-wider bg-primary/10 px-2 py-1 rounded">Etiquette</span>
+<span class="text-[#896561] text-xs font-medium uppercase tracking-wider">Featured Story</span>
+</div>
+<h2 class="text-[#181211] dark:text-white text-2xl md:text-3xl font-extrabold leading-tight">Table Manners 101: Dining Like a Local in Seoul</h2>
+<p class="text-[#896561] dark:text-white/60 text-base md:text-lg font-normal leading-relaxed">
+                            Master the art of Korean dining etiquette, from the intricate rules of chopstick use to showing respect to your elders at the table. Avoid common tourist mistakes and dine with confidence.
+                        </p>
+<div class="flex items-center justify-between mt-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-[#896561]">schedule</span>
+<p class="text-[#896561] text-sm font-medium">12 min read</p>
+</div>
+<button class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-wide hover:brightness-110">
+<span>Read Full Guide</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Image Grid Posts -->
+<div class="px-4">
+<h3 class="text-xl font-bold mb-6 text-[#181211] dark:text-white">Recent Articles</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Post 1 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-white/5 rounded-xl p-4 border border-[#f4f0f0] dark:border-white/5 hover:border-primary/30 transition-all group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden" data-alt="Spicy tteokbokki street food at a night market stall" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDPO0T9OusnOTTG6QHIWcppzDTm1fVFZAksINNWSUUoaGkH1EJ8YlNZa903kG9bJpVTjH4ilJbh1XSSVwf6-teONfLrweYYQgmz5PpJtS-fjkPBKt2b-b2tciHmfmwc6bFS-AL4IBmSAMA9S_hDr89325EDA8qeaRSM06NQ2Hz0QxYvL3sSK8DXaOWE8w89BNxjx1AafF5G7d1EYQMdppwxgejc5yKktkC_Oicu4xr5zrVxgoSeChp21AMM8AAuewWA-b9o-FBF4Hk");'>
+<div class="w-full h-full bg-black/20 group-hover:bg-transparent transition-all"></div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">Must-Try Dishes</p>
+<h4 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Top 10 Street Foods in Gwangjang Market</h4>
+<p class="text-[#896561] dark:text-white/60 text-sm font-normal line-clamp-2">A complete checklist for your first visit to Seoul's oldest market. From mung bean pancakes to spicy rice cakes.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[16px] text-[#896561]">schedule</span>
+<p class="text-[#896561] text-xs font-medium uppercase">6 min read</p>
+</div>
+</div>
+</div>
+<!-- Post 2 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-white/5 rounded-xl p-4 border border-[#f4f0f0] dark:border-white/5 hover:border-primary/30 transition-all group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden" data-alt="Sizzling Korean BBQ pork on a charcoal grill" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBdZBeaUAa8yUJ7HRzNKn21e4dY-FpV6BBAoqI8DtfaWUFI8XhbF0wFpyBnZd_GTHyKlpEIH6t0NjVlFwZGyeMMdYey1wXv6VIgeJxQrgJckNoa7kyjgzNJ4qLGsKVyz7op6Etkbp7tUMjrqzy1pNtKPnWZEkZG90cogouVD9NThnP3VlSytVpI6v5QEJfgHkItvg2ht14EA3amrcKIYzFm_ZPdYEfRuWbnuXL5DUvmO6z2zjiQvUPuC-8a_A0EB7llGQK11aUSfAU");'>
+<div class="w-full h-full bg-black/20 group-hover:bg-transparent transition-all"></div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">Hidden Gems</p>
+<h4 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">Finding the Best Secret BBQ Spot in Hongdae</h4>
+<p class="text-[#896561] dark:text-white/60 text-sm font-normal line-clamp-2">Escape the crowds and taste authentic charcoal-grilled pork at this family-run restaurant tucked in an alleyway.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[16px] text-[#896561]">schedule</span>
+<p class="text-[#896561] text-xs font-medium uppercase">10 min read</p>
+</div>
+</div>
+</div>
+<!-- Post 3 -->
+<div class="flex flex-col gap-4 bg-white dark:bg-white/5 rounded-xl p-4 border border-[#f4f0f0] dark:border-white/5 hover:border-primary/30 transition-all group">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-lg overflow-hidden" data-alt="Elegant traditional tea ceremony set in a hanok house" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB73Dr0knACZBb5YgF7A6Kk_eSXsEvZWETSKuMWMdK_bCt4A2FA7Nqc5z2A101dQu3nbfCqlyglvmATAg5wVJbF5sMcdRPVi6zV79R4fJFkZsBf6i4JdG1Paic9k8FVCsZ8v_R7Risbu9rxfjTf7oRzXj3DuYEJw4I00rAVUph1heLQ1h0sArnhyZVGGmhUllqizAl7eKZUPNCv-btsUDTkaZY-SWsa9FA_5M7jUn6gmso-Dpc6n8KjuIsZI9ejRH96UnKzGlD4J9M");'>
+<div class="w-full h-full bg-black/20 group-hover:bg-transparent transition-all"></div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-primary text-xs font-bold uppercase">Culture</p>
+<h4 class="text-[#181211] dark:text-white text-lg font-bold leading-tight group-hover:text-primary transition-colors">The Serenity of Tea: Best Hanok Teahouses</h4>
+<p class="text-[#896561] dark:text-white/60 text-sm font-normal line-clamp-2">Step back in time at these preserved traditional Korean houses in Bukchon. A guide to the perfect afternoon tea.</p>
+<div class="flex items-center gap-2 mt-2">
+<span class="material-symbols-outlined text-[16px] text-[#896561]">schedule</span>
+<p class="text-[#896561] text-xs font-medium uppercase">8 min read</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<button class="flex min-w-[200px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 border-2 border-primary text-primary text-sm font-bold tracking-wide hover:bg-primary hover:text-white transition-all">
+<span>Load More Articles</span>
+</button>
+</div>
+</div>
+</main>
+<!-- Simple Footer -->
+<footer class="bg-white dark:bg-background-dark/80 border-t border-[#f4f0f0] dark:border-white/10 py-12 px-4 mt-10">
+<div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex items-center gap-4 text-[#181211] dark:text-white">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<span class="text-lg font-bold">Delicious Korea</span>
+</div>
+<div class="flex gap-8 text-[#896561] text-sm">
+<a class="hover:text-primary" href="#">Instagram</a>
+<a class="hover:text-primary" href="#">YouTube</a>
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Contact</a>
+</div>
+<p class="text-[#896561] text-xs">© 2024 Delicious Korea Food Tours. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
